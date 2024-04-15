@@ -1,9 +1,10 @@
 body {
 	background-color: black;
-	margin-left: 1.5rem;
+	/* margin-left: 1.5rem; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	overflow-x: hidden;
 }
 
@@ -66,6 +67,21 @@ p {
 	line-height: 1.9rem;
 }
 
+a {
+	transition: all 0.25s linear;
+}
+
+a:hover {
+	text-decoration: underline !important;
+	transition: all 0.25s linear;
+	opacity: 50%;
+}
+
+a.btn:hover {
+	text-decoration: none !important;
+	opacity: 100%;
+}
+
 figure {
  padding: 0px !important;
 }
@@ -82,13 +98,6 @@ figure {
 	transform: scale(-1, 1);
 }
 
-.tools {
-	margin: 0px;
-	padding-right: 0px;
-	padding-left: 1.7rem;
-	padding-top: 0.5rem;
-}
-
 header {
 	padding-top: 1.25rem;
 	padding-bottom: 0.62rem;
@@ -96,11 +105,19 @@ header {
 	border-bottom: 0.22rem solid #999999;
 }
 
+header .tools {
+	margin: 0px;
+	padding-right: 0px;
+	padding-left: 1.7rem;
+	padding-top: 0.5rem;
+}
+
 header a {
 	text-decoration: none !important;
 	color: #999999 !important;
 	font-family: 'SFProDisplay Light' !important;
 	font-size: 1.125rem !important;
+	height: fit-content;
 }
 
 header h4 {
@@ -122,11 +139,12 @@ header > .second-line > a:first-of-type {
 header > .second-line a:last-of-type {
 	padding-top: 0.2rem;
 	padding-left: 1rem;
-	padding-right: 1.1965rem;
 	border-radius: 12px;
 	height: 2.5rem;
+	margin-left: 1%;
 	width: fit-content;
-	margin-left: 1rem;
+	padding-left: 1%;
+	padding-right: 1.5%;
 	color: white !important;
 }
 
@@ -160,15 +178,21 @@ header nav {
 }
 
 .jumbotron a {
-	text-decoration: none !important;
+	text-decoration: none;
 	color: #999999 !important;
-	width: 48%;
+	width: fit-content;
 	margin-top: 5rem;
+}
+
+.jumbotron .row > .row {
+	padding-left: 3%;
 }
 
 .jumbotron a:first-of-type {
 	text-align: right;
-	padding-right: 1.1rem;
+	margin-right: 1.1rem;
+	padding-left: 0%;
+	padding-right: 0%;
 	letter-spacing: 0.04rem;
 }
 
@@ -192,6 +216,9 @@ header nav {
 	position: relative;
 	padding-top: 10rem;
 	padding-bottom: 15.31rem;
+	width: 1920px;
+	/* width: 100%;
+	max-width: 1920px !important; */
 }
 
 .comfort p {
@@ -208,20 +235,23 @@ header nav {
 }
 
 .comfort img:nth-child(1) {
-	left: 0rem !important;
+	left: 12% !important;
+	top: 19rem;
 }
 
 .comfort img:nth-child(2) {
-	right: 0rem !important;
+	right: 12% !important;
+	top: 19rem;
 }
 
 .audio-quality {
 	background-image: url('../imgs/woman_head.png');
+	background-repeat: no-repeat;
 	background-position: 50%;
 	border-radius: 20px;
 	width: 100%;
 	max-width: 1920px !important;
-	height: 67.55vh;
+	height: 53rem;
 	padding-top: 19.9rem;
 	padding-left: 9.25%;
 	padding-right: 0px;
@@ -246,7 +276,10 @@ header nav {
 	padding-top: 39rem;
 	padding-left: 0px;
 	padding-right: 0px;
-	padding-bottom: 16.35rem;
+	padding-bottom: 18rem;
+	width: 1920px;
+	/* width: 100%;
+	max-width: 1920px !important; */
 }
 
 .sounds-cancellation img {
@@ -256,11 +289,13 @@ header nav {
 }
 
 .sounds-cancellation img:nth-child(1) {
-	left: 0.2rem !important;
+	left: 12.5%;
+	top: 19rem;
 }
 
 .sounds-cancellation img:nth-child(2) {
-	right: 0.2rem !important;
+	right: 12.5%;
+	top: 19rem;
 }
 
 .sounds-cancellation p {
@@ -268,23 +303,25 @@ header nav {
 	text-align: justify;
 	margin-bottom: 0rem;
 	padding-left: 33.8%;
-	padding-right: 34.1%;
+	padding-right: 33%;
 }
 
 .sounds-cancellation p:nth-of-type(2) {
 	padding-top: 3.5rem;
-	padding-right: 33.64%;
+	padding-right: 33%;
 }
 
 .noise-cancellation {
-	padding-top: 1.25rem;
 	background-image: url('../imgs/earphone_noise.png');
 	background-repeat: no-repeat;
-	background-position: 5% 61%;
-	height: 120vh;
+	background-position-y: 59%;
+	background-position-x: center;
+	height: 94.8rem;
 	position: relative;
 	padding-left: 0%;
 	padding-right: 0%;
+	/* width: 100%;
+	max-width: 1920px !important; */
 }
 
 .noise-cancellation h2 {
@@ -319,14 +356,17 @@ header nav {
 }
 
 .specifications {
-	padding-top: 3.25rem;
+	padding-top: 1.25rem;
 	padding-left: 0rem;
 	padding-right: 0rem;
 	position: relative;
 	margin-left: 0%;
 	margin-right: 0%;
-	width: 100%;
-	max-width: 1920px !important;
+	width: 1920px;
+}
+
+.specifications .container {
+	position: relative;
 }
 
 .specifications img {
@@ -335,36 +375,36 @@ header nav {
 }
 
 .specifications img:nth-child(1) {
-	left: 14.9rem;
-	top: 5.6%;
+	left: 0%;
+	top: 5.6rem;
 }
 
 .specifications img:nth-child(2) {
-	left: 37.5rem;
-	top: 42.2%;
+	left: 25.3%;
+	top: 63.5rem;
 }
 
 .specifications img:nth-child(3) {
-	left: 30rem;
-	top: 74.6%;
+	left: 17%;
+	top: 114.75rem;
 }
 
 .specifications img:nth-child(4) {
-	left: 30.3%;
-	top: 66.7%;
+	left: 24.5%;
+	top: 102.25rem;
 }
 
 .specifications img:nth-child(5) {
-	left: 57%;
-	top: 85.1%;
+	left: 59%;
+	top: 131.5rem;
 }
 
 .specifications .rectangle {
 	position: absolute;
 	left: 0%;
-	top: 8.1%;
+	top: 11rem;
 	width: 100%;
-	height: 98.4vh;
+	height: 77.3rem;
 	background-color: white;
 	border-radius: 20px;
 	z-index: -2;
@@ -380,39 +420,39 @@ header nav {
 
 .specifications p:nth-of-type(1) {
 	padding-top: 14.8rem;
-	padding-left: 31.5%;
-	padding-right: 44.1%;
+	padding-left: 25%;
+	padding-right: 42%;
 	text-align: justify;
 }
 
 .specifications p:nth-of-type(2) {
 	padding-top: 3.5rem;
-	padding-left: 63.2%;
-	padding-right: 12.6%;
+	padding-left: 67.75%;
+	padding-right: 0%;
 	text-align: justify;
 	text-indent: 1.35rem;
 }
 
 .specifications p:nth-of-type(3) {
 	padding-top: 6.2rem;
-	padding-left: 38.1%;
-	padding-right: 37.6%;
+	padding-left: 34%;
+	padding-right: 33.33%;
 	text-align: justify;
 	text-indent: 1.1rem;
 }
 
 .specifications p:nth-of-type(4) {
 	padding-top: 43.1rem;
-	padding-left: 12.5%;
-	padding-right: 63.4%;
+	padding-left: 0%;
+	padding-right: 68%;
 	text-align: justify;
 	text-indent: 1rem;
 }
 
 .specifications p:nth-of-type(5) {
 	padding-top: 43.1rem;
-	padding-left: 63.4%;
-	padding-right: 12.4%;
+	padding-left: 68%;
+	padding-right: 0%;
 	text-align: justify;
 	text-indent: 2rem;
 }
@@ -504,7 +544,7 @@ header nav {
 }
 
 .shop .col-sm-3 img {
-	margin-top: 44%;
+	margin-top: 9.7rem;
 	margin-bottom: 16%;
 }
 
@@ -584,7 +624,7 @@ header nav {
 }
 
 .questions label {
-	width: 36%;
+	width: 33%;
 	font-size: 1.125rem;
 }
 
@@ -615,8 +655,8 @@ header nav {
 
 .questions form figure {
 	position: absolute;
-	top: 10.5rem;
-	left: 64.1%;
+	top: 10.75rem;
+	left: 63%;
 	height: 1.3rem;
 }
 
@@ -633,7 +673,7 @@ header nav {
 	border-left: 3px solid #c0c0c0;
 	position: absolute;
 	top: 10.3rem;
-	left: 62.7%;
+	left: 61.5%;
 }
 
 footer {
@@ -676,11 +716,14 @@ footer p a {
 }
 
 @media screen and (min-width: 1600px) {
-	header, footer {
+	.container {
+		max-width: 1450px;
+	}
+	/* header, footer {
 		max-width: 1440px !important;
 	}
 
-	.comfort, .sounds-cancellation, .noise-cancellation, .battery .container, .shop {
+	.comfort, .battery .container, .shop {
 		max-width: 1450px !important;
-	}
+	} */
 }
