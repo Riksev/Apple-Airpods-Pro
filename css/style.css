@@ -10,7 +10,6 @@ body {
 
 /*
  * Tasks: 
-	Адаптировать и закончить Bootstrap
 	Переписать под Less
  *
 */
@@ -179,12 +178,15 @@ header .navbar-brand {
 }
 
 header a, body > .navbar a {
-	text-decoration: none !important;
 	color: #999999 !important;
 	font-family: 'SFProDisplay Light' !important;
 	font-size: 1.125rem !important;
 	padding-left: 0% !important;
 	padding-right: 0% !important;
+}
+
+body > .navbar .navbar-brand {
+	text-decoration: none !important;
 }
 
 body > .navbar {
@@ -942,6 +944,10 @@ footer p a {
 	font-family: 'SFProDisplay Bold';
 	color: white !important;
 	text-decoration: none;
+}
+
+.modal h4 {
+	color: black;
 }
 
 @media screen and (max-width: 1600px) {
