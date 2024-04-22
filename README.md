@@ -1,9 +1,9 @@
 # Apple Airpods Pro
 ## Description
-Hey :wave:! Glad to see you here :slightly_smiling_face:. Let me introduce you to this project:
-This is a website about a new generation of in-ear headphones.
-It was created in order to get used to Bootstrap and LESS :book:. 
-Also to improve HTML, CSS, Git and JavaScript skills :dizzy:.
+Hey :wave:! Glad to see you here :slightly_smiling_face:. Let me introduce you to this project:<br />
+This is a website about a new generation of in-ear headphones.<br />
+It was created in order to get used to Bootstrap and LESS :book:. <br />
+Also to improve HTML, CSS, Git and JavaScript skills :dizzy:.<br />
 Link to a website: [Click here!](https://riksev.github.io/Apple-Airpods-Pro/).
 ## Tools
 - **Markup languages**: HTML;
